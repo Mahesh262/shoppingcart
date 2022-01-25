@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="JS/bootstrap.js">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap-utilities.css">
+    <style>
+        .form-control {
+            width: 20%;
+            border: 2px solid green;
+        }
+
+        #product {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid green;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid green;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Log</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row d-inline-flex">
+            <div class="col-3-sm-3 my-3 mx-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.pixabay.com/photo/2018/07/28/02/26/puffins-3567175_960_720.jpg" alt=".."
+                        class="image-top">
+                    <h3 class="card-brand">birds</h3>
+                    <h4 class="card-price">$20</h4>
+                    <button class="btn btn-primary addcart" type="button">ADDCart</button>
+                </div>
+            </div>
+            <div class="col-3-sm-3 my-3 mx-3 lg">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://media.istockphoto.com/photos/puffin-picture-id1257696730?s=612x612" alt=".."
+                        class="image-top">
+                    <h3 class="card-brand">puffin</h3>
+                    <h4 class="card-price">$40</h4>
+                    <button class="btn btn-primary addcart" type="button">ADDCart</button>
+                </div>
+
+            </div>
+            <div class="col-3-sm-3 my-3 mx-3 lg">
+                <div class="card" style="width: 18rem;">
+                    <img src='https://media.istockphoto.com/photos/arctic-fox-picture-id1257696762?s=612x612' alt=".."
+                        class="image-top">
+                    <h3 class="card-brand">macov</h3>
+                    <h4 class="card-price">$10</h4>
+                    <button class="btn btn-primary addcart" type="button">ADDCart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col">
+            <div class="cart" style="display:flex; justify-content:space-between">
+                <h4>product</h4>
+                <h4>quantity</h4>
+                <h4>price</h4>
+            </div>
+            <div class="products" id="product">
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg" width="150px"
+                    alt="..">
+                <h4 class="item-name">blue sky</h4>
+                <h4 class="item-price">$100</h4>
+                <input type="number" class="form-control num" name="num" id="num" value='1'>
+                <button class="btn btn-primary remove" type="button">remove</button>
+            </div> -->
+                <div class="grnads">
+                    <h4>grandTotal</h4>
+                    <h4 class="grand-total">$</h4>
+                </div>
+            </div>
+        </div>
+        <script src="carN2.js"></script>
+</body>
+
+</html>
